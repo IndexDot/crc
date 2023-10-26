@@ -1,0 +1,248 @@
+html {
+    font-size: 16px;
+    font-family: 'Cutive Mono', monospace;
+}
+
+body {
+    background-image: url('../images/silvana-amicone-aCHBgtcE7D8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(141, 141, 141);
+    margin: 0;
+    padding: 0;
+}
+
+.scary {
+    color: red;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*top bar*/
+
+.top-bar {
+    display: flex;
+    align-content: center;
+    height: 3rem;
+    width: 100%;
+    background-color: black;
+}
+
+.top-bar ul {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+.top-bar li {
+    display: flex;
+    margin: 0 2rem;
+    color: white;
+    align-items: center;
+}
+
+.top-bar li:hover {
+    cursor: pointer;
+}
+
+.top-bar li:active {
+    color: grey;
+}
+
+@media only screen and (max-width: 425px) {
+    .top-bar {
+        justify-content: center;
+    }
+
+    .top-bar .just-join {
+        display: none;
+    }
+
+    .top-bar ul {
+        padding: 0;
+    }
+}
+
+/*creepy forest club*/
+
+#crc {
+    opacity: 0.9;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+
+#crc h1 {
+    opacity: 1;
+    margin-top: 7rem;
+    background-color: black;
+    color: white;
+}
+
+/*info*/
+
+#info {
+    display: block;
+    color: white;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+#info .info1 {
+    opacity: 1;
+    width: 66%;
+    text-align: start;
+    background-color: black;
+    padding: 3rem 0 3rem 3rem;
+    margin-top: 3rem;
+}
+
+#info .info2 {
+    opacity: 1;
+    padding: 3rem 3rem 3rem 0;
+    width: 66%;
+    margin: 1rem 0 0 33%;
+    text-align: end;
+    background-color: black;
+}
+
+@media only screen and (max-width: 425px) {
+    #info .info1 {
+        width: 100%;
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    #info .info2 {
+        width: 100%;
+        margin: 1rem 0 0 0;
+        padding: 3rem 0;
+        text-align: center;
+    }
+}
+
+/*quote*/
+
+#quote {
+    opacity: 0.9;
+    text-align: center;
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-top: 8rem;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+#quote h3,
+#quote h6 {
+    opacity: 1;
+}
+
+/*contact info stuff*/
+
+#contact {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.where,
+.get-in-touch,
+.member {
+    min-width: 16.625rem;
+    margin: 5rem 4rem 2rem 4rem;
+    height: 20rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: solid 3px rgb(153, 3, 3);
+    opacity: 0.9;
+}
+
+.where h3,
+.where p {
+    text-align: center;
+    width: 75%;
+    line-height: 3rem;
+    opacity: 1;
+}
+
+.get-in-touch h3,
+.get-in-touch p {
+
+    text-align: center;
+    width: 75%;
+    line-height: 3rem;
+    opacity: 1;
+}
+
+.member h3,
+.member p {
+    text-align: center;
+    width: 75%;
+    line-height: 3rem;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .where,
+    .get-in-touch,
+    .member {
+        min-width: 2rem;
+        margin: 5rem 2rem 2rem 2rem;
+    }
+
+    .where h3,
+    .where p {
+        line-height: 2rem;
+    }
+
+    .get-in-touch h3,
+    .get-in-touch p {
+        line-height: 2rem;
+        min-width: 9.375rem;
+    }
+
+    .member h3,
+    .member p {
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .where,
+    .get-in-touch,
+    .member {
+        width: 18rem;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+}
+
+/*
+footer {
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    height: 1.5rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+    width: 100%;
+}
+*/
